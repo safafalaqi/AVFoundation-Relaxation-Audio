@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F5C6A5EDE72C84F3017F415 /* Pods_AVFoundation_Relaxation_Audio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8380C16016B6E251C477D154 /* Pods_AVFoundation_Relaxation_Audio.framework */; };
+		85504D7E277B63DE00A57C9F /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85504D7D277B63DE00A57C9F /* Gradient.swift */; };
 		85933ABA277A8C4100A9F362 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85933AB9277A8C4100A9F362 /* AppDelegate.swift */; };
 		85933ABC277A8C4100A9F362 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85933ABB277A8C4100A9F362 /* SceneDelegate.swift */; };
 		85933ABE277A8C4100A9F362 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85933ABD277A8C4100A9F362 /* ViewController.swift */; };
 		85933AC1277A8C4100A9F362 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85933ABF277A8C4100A9F362 /* Main.storyboard */; };
 		85933AC3277A8C4600A9F362 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85933AC2277A8C4600A9F362 /* Assets.xcassets */; };
 		85933AC6277A8C4600A9F362 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85933AC4277A8C4600A9F362 /* LaunchScreen.storyboard */; };
+		85BE0004277BE35F00024538 /* SnowParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 85BE0003277BE35F00024538 /* SnowParticle.sks */; };
+		85BE0006277BE63700024538 /* ParticleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BE0005277BE63700024538 /* ParticleScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18F03C260092D08578ADCD24 /* Pods-AVFoundation Relaxation Audio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVFoundation Relaxation Audio.debug.xcconfig"; path = "Target Support Files/Pods-AVFoundation Relaxation Audio/Pods-AVFoundation Relaxation Audio.debug.xcconfig"; sourceTree = "<group>"; };
+		8380C16016B6E251C477D154 /* Pods_AVFoundation_Relaxation_Audio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AVFoundation_Relaxation_Audio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85504D7D277B63DE00A57C9F /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
 		85933AB6277A8C4100A9F362 /* AVFoundation Relaxation Audio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AVFoundation Relaxation Audio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85933AB9277A8C4100A9F362 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85933ABB277A8C4100A9F362 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,9 @@
 		85933AC2277A8C4600A9F362 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85933AC5277A8C4600A9F362 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85933AC7277A8C4600A9F362 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85BE0003277BE35F00024538 /* SnowParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SnowParticle.sks; sourceTree = "<group>"; };
+		85BE0005277BE63700024538 /* ParticleScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleScene.swift; sourceTree = "<group>"; };
+		F644427B54A44773E28AC1BC /* Pods-AVFoundation Relaxation Audio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVFoundation Relaxation Audio.release.xcconfig"; path = "Target Support Files/Pods-AVFoundation Relaxation Audio/Pods-AVFoundation Relaxation Audio.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F5C6A5EDE72C84F3017F415 /* Pods_AVFoundation_Relaxation_Audio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11C127B2F8269ADF0E04FE2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8380C16016B6E251C477D154 /* Pods_AVFoundation_Relaxation_Audio.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		85933AAD277A8C4100A9F362 = {
 			isa = PBXGroup;
 			children = (
 				85933AB8277A8C4100A9F362 /* AVFoundation Relaxation Audio */,
 				85933AB7277A8C4100A9F362 /* Products */,
+				E492AABE1F44AA9A925F9899 /* Pods */,
+				11C127B2F8269ADF0E04FE2A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +84,20 @@
 				85933AC2277A8C4600A9F362 /* Assets.xcassets */,
 				85933AC4277A8C4600A9F362 /* LaunchScreen.storyboard */,
 				85933AC7277A8C4600A9F362 /* Info.plist */,
+				85504D7D277B63DE00A57C9F /* Gradient.swift */,
+				85BE0003277BE35F00024538 /* SnowParticle.sks */,
+				85BE0005277BE63700024538 /* ParticleScene.swift */,
 			);
 			path = "AVFoundation Relaxation Audio";
+			sourceTree = "<group>";
+		};
+		E492AABE1F44AA9A925F9899 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				18F03C260092D08578ADCD24 /* Pods-AVFoundation Relaxation Audio.debug.xcconfig */,
+				F644427B54A44773E28AC1BC /* Pods-AVFoundation Relaxation Audio.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 85933ACA277A8C4600A9F362 /* Build configuration list for PBXNativeTarget "AVFoundation Relaxation Audio" */;
 			buildPhases = (
+				A8E72DD569D62858A9AF93B9 /* [CP] Check Pods Manifest.lock */,
 				85933AB2277A8C4100A9F362 /* Sources */,
 				85933AB3277A8C4100A9F362 /* Frameworks */,
 				85933AB4277A8C4100A9F362 /* Resources */,
+				272183169BBD8F679BD5C8B4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,11 +162,54 @@
 			files = (
 				85933AC6277A8C4600A9F362 /* LaunchScreen.storyboard in Resources */,
 				85933AC3277A8C4600A9F362 /* Assets.xcassets in Resources */,
+				85BE0004277BE35F00024538 /* SnowParticle.sks in Resources */,
 				85933AC1277A8C4100A9F362 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		272183169BBD8F679BD5C8B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AVFoundation Relaxation Audio/Pods-AVFoundation Relaxation Audio-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AVFoundation Relaxation Audio/Pods-AVFoundation Relaxation Audio-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AVFoundation Relaxation Audio/Pods-AVFoundation Relaxation Audio-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8E72DD569D62858A9AF93B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AVFoundation Relaxation Audio-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		85933AB2277A8C4100A9F362 /* Sources */ = {
@@ -141,6 +219,8 @@
 				85933ABE277A8C4100A9F362 /* ViewController.swift in Sources */,
 				85933ABA277A8C4100A9F362 /* AppDelegate.swift in Sources */,
 				85933ABC277A8C4100A9F362 /* SceneDelegate.swift in Sources */,
+				85504D7E277B63DE00A57C9F /* Gradient.swift in Sources */,
+				85BE0006277BE63700024538 /* ParticleScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +364,7 @@
 		};
 		85933ACB277A8C4600A9F362 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18F03C260092D08578ADCD24 /* Pods-AVFoundation Relaxation Audio.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +393,7 @@
 		};
 		85933ACC277A8C4600A9F362 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F644427B54A44773E28AC1BC /* Pods-AVFoundation Relaxation Audio.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

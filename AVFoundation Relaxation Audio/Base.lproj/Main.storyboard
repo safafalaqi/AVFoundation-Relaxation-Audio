@@ -1,24 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="s5Q-zd-Ggs">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AVFoundation_Relaxation_Audio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LiO-xC-DoR" customClass="Gradient" customModule="AVFoundation_Relaxation_Audio" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jQF-eT-d4c">
+                                        <rect key="frame" x="0.0" y="576" width="414" height="320"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="320" id="1vD-rQ-uUu"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="jQF-eT-d4c" secondAttribute="trailing" id="JtI-Me-lCV"/>
+                                    <constraint firstAttribute="bottom" secondItem="jQF-eT-d4c" secondAttribute="bottom" id="c2H-XA-Lyg"/>
+                                    <constraint firstItem="jQF-eT-d4c" firstAttribute="leading" secondItem="LiO-xC-DoR" secondAttribute="leading" id="zRh-fC-e3f"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.1359553943" green="0.25957037430000002" blue="0.38375184029999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="0.017942128190852571" green="0.034255683301788083" blue="0.050643997963028764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="c4H-L5-sDL">
+                                <rect key="frame" x="20" y="117" width="374" height="113.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QgH-PT-LRv">
+                                        <rect key="frame" x="144" y="0.0" width="86.5" height="49.5"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="playpause.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30"/>
+                                            <color key="baseForegroundColor" red="1" green="0.4974334319" blue="0.080131145099999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="startPauseMusic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GbS-Eu-KxM"/>
+                                        </connections>
+                                    </button>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="AEc-NI-Q06">
+                                        <rect key="frame" x="-2" y="83.5" width="378" height="31"/>
+                                        <color key="minimumTrackTintColor" red="1" green="0.4974334319" blue="0.080131145099999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="thumbTintColor" red="1" green="0.4974334319" blue="0.080131145099999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="changeAudioTime:" destination="BYZ-38-t0r" eventType="valueChanged" id="Anu-VK-zxr"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="AEc-NI-Q06" firstAttribute="leading" secondItem="c4H-L5-sDL" secondAttribute="leading" id="KdE-yn-xE4"/>
+                                    <constraint firstAttribute="trailing" secondItem="AEc-NI-Q06" secondAttribute="trailing" id="cns-Sq-efx"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.75068032620000003" green="0.59921371420000002" blue="0.0056128449820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LiO-xC-DoR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="GCK-9a-bU8"/>
+                            <constraint firstItem="c4H-L5-sDL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="I1a-C8-PFa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c4H-L5-sDL" secondAttribute="trailing" constant="20" id="I9h-Kh-n0N"/>
+                            <constraint firstItem="LiO-xC-DoR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ILC-i5-LJT"/>
+                            <constraint firstItem="LiO-xC-DoR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="KXI-LJ-sxi"/>
+                            <constraint firstAttribute="bottom" secondItem="LiO-xC-DoR" secondAttribute="bottom" id="OLe-Z0-ECz"/>
+                            <constraint firstItem="c4H-L5-sDL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="29" id="vcL-Uq-eVj"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="x9Y-Fs-WPX">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="questionmark.circle" catalog="system" id="oo3-r4-a3d">
+                            <color key="tintColor" red="1" green="0.4974334319" blue="0.080131145099999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="showInstructions:" destination="BYZ-38-t0r" id="qX0-mT-c9W"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="audioSlider" destination="AEc-NI-Q06" id="sf6-JJ-8iI"/>
+                        <outlet property="startPauseButton" destination="QgH-PT-LRv" id="qym-d4-Fgf"/>
+                        <outlet property="waveView" destination="jQF-eT-d4c" id="XOA-PD-fvz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1044.9275362318842" y="124.55357142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ib2-Zz-UuE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="s5Q-zd-Ggs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OES-oV-CiQ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="LTK-Hf-rfR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3pc-O2-cDP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="124.55357142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="playpause.fill" catalog="system" width="128" height="70"/>
+        <image name="questionmark.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
